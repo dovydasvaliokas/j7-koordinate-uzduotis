@@ -26,5 +26,15 @@ public class Programa {
 
         k3.pokytis(5, -10);
         System.out.println("k3 = " + k3);
+
+        System.out.println("-------------------------KVADRATAS--------------------------");
+        Koordinate kv1 = new Koordinate(20, 20);
+        Koordinate kv2 = new Koordinate(20, 40);
+        Koordinate kv3 = new Koordinate(40, 40);
+        Koordinate kv4 = new Koordinate(40, 20);
+
+        boolean arKv = Koordinate.arKvadratas(kv1, kv2, kv3, kv4);
+
+
     }
 }
