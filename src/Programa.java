@@ -34,6 +34,11 @@ public class Programa {
         Koordinate kv4 = new Koordinate(40, 20);
 
         boolean arKv = Koordinate.arKvadratas(kv1, kv2, kv3, kv4);
+        System.out.println("arKv = " + arKv);
+        boolean arKv2 = Koordinate.arKvadratas(kv1, k1, k2, kv4);
+        boolean arKv3 = Koordinate.arKvadratas(kv1, kv2, k1, k3);
+        System.out.println("arKv3 = " + arKv3);
+        System.out.println("arKv2 = " + arKv2);
 
 
     }
