@@ -12,6 +12,9 @@
  */
 public class Programa {
     public static void main(String[] args) {
-
+        Koordinate k1 = new Koordinate(5, 20);
+        System.out.println("k1 = " + k1);
+        k1.sukeistiVietomis();
+        System.out.println("k1 = " + k1);
     }
 }

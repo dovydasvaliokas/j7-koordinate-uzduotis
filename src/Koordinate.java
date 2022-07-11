@@ -10,7 +10,14 @@ public class Koordinate {
     public Koordinate() {
     }
 
-
+    /**
+     * Sukeičia x ir y vietomis
+     */
+    public void sukeistiVietomis() {
+        double laikinas = x;
+        x = y;
+        y = laikinas;
+    }
 
     public double getX() {
         return x;
