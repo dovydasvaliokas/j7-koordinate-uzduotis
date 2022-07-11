@@ -20,5 +20,8 @@ public class Programa {
         System.out.println("k2 = " + k2);
 
         System.out.println("k1.atstumasIki(k2) = " + k1.atstumasIki(k2));
+
+        Koordinate k3 = Koordinate.vidurioTaskas(k1, k2);
+        System.out.println("k3 = " + k3);
     }
 }

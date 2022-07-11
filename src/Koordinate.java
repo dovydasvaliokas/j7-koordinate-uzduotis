@@ -28,6 +28,16 @@ public class Koordinate {
         return Math.sqrt(Math.pow(x - koord.x, 2) + Math.pow(y - koord.y, 2));
     }
 
+    /**
+     * Suranda vidurio tašką tarp dviejų plokštumos taškų
+     * @param k1 pirmas taškass
+     * @param k2 antras taškass
+     * @return Koordinate objektą - vidurio tašką
+     */
+    public static Koordinate vidurioTaskas(Koordinate k1, Koordinate k2) {
+        return new Koordinate((k1.x + k2.x) / 2, (k1.y + k2.y) / 2);
+    }
+
     public double getX() {
         return x;
     }
