@@ -56,6 +56,7 @@ public class Koordinate {
      * Tada einu per kiekvieną ir surandu atstumus nuo jos iki sekančių masyve (tarkim jeigu dabar 0-inė tai randu atstumus nuo 0 iki 1, iki 2 ir iki 3. Jeigu dabar yra 2, tai randu atstumus tik iki 3 (nes nuo 2 iki 1 bus radę praeiti ciklo etapai, tai nereikia dubliuotis)
      * Atstumus dedu į dažnumo mapą - jeigu tokio pat atstumo kraštinė tą map'o value tiesiog padidinu vienetu. Galiausiai turi būti 4 vienodos kraštinės ir 2 vienodos įstrižainės
      * Hashmap'e Key bus kraštinės ilgis, Value bus kiek tokių kraštinių yra. Automatiškai, jeigu map'e daugiau nei 2 elementai - blogai, nes gali būti tik 4 vienodos kraštinės ir 2 vienodos įstrižainės, tai viso Map'e max 2 elementai kvadratui
+     * Jeigu yra lygiai du skirtingi ilgiai, tai dar vis vien reiki patikrinti ar yra būtent 4 kraštinės ir ar yra būtent 2 įstrižainės.
      * @param k1 pirmas taškas
      * @param k2 antras taškass
      * @param k3 trečias taškass
@@ -76,8 +77,15 @@ public class Koordinate {
                 }
             }
         }
-        System.out.println("krastiniuKartojimasis = " + krastiniuKartojimasis);
-        return true;
+        if (krastiniuKartojimasis.size() > 2) {
+            return false;
+        }
+        else if (krastiniuKartojimasis.containsValue(4) && krastiniuKartojimasis.containsValue(2)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public double getX() {
