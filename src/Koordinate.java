@@ -38,6 +38,16 @@ public class Koordinate {
         return new Koordinate((k1.x + k2.x) / 2, (k1.y + k2.y) / 2);
     }
 
+    /**
+     * Padidina funkcijos koordinates nurodytais dydžiaiss
+     * @param dx kiek padidinti x
+     * @param dy kiek padidinti y
+     */
+    public void pokytis(double dx, double dy) {
+        x += dx;
+        y += dy;
+    }
+
     public double getX() {
         return x;
     }

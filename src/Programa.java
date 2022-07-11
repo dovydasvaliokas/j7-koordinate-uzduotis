@@ -23,5 +23,8 @@ public class Programa {
 
         Koordinate k3 = Koordinate.vidurioTaskas(k1, k2);
         System.out.println("k3 = " + k3);
+
+        k3.pokytis(5, -10);
+        System.out.println("k3 = " + k3);
     }
 }
